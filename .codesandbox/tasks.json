@@ -1,0 +1,22 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "flutter pub get",
+      "name": "flutter pub get"
+    },
+    {
+      "command": "flutter pub run build_runner build --delete-conflicting-outputs ",
+      "name": "flutter pub run build_runner build --delete-conflicting-outputs "
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "flutter pub run build_runner build --delete-conflicting-outputs ": {
+      "name": "flutter pub run build_runner build --delete-conflicting-outputs ",
+      "command": "flutter pub run build_runner build --delete-conflicting-outputs ",
+      "runAtStart": true
+    }
+  }
+}
